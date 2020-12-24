@@ -1,0 +1,10 @@
+collections:
+- name: community.general
+- name: community.network
+- name: community.postgresql
+- name: community.mysql
+- name: community.crypto
+- name: community.zabbix
+- name: community.grafana
+- name: community.routeros
+

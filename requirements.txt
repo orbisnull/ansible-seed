@@ -1,2 +1,6 @@
 wheel
 ansible
+cryptography
+PyMySQL
+psycopg2
+zabbix-api

@@ -2,3 +2,4 @@ venv
 ansible/.cache
 ansible/.tmp
 ansible/inventory
+ansible/collections
