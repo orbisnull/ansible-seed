@@ -3,3 +3,4 @@ ansible/.cache
 ansible/.tmp
 ansible/inventory
 ansible/collections
+ansible/data

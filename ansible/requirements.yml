@@ -7,4 +7,5 @@ collections:
 - name: community.zabbix
 - name: community.grafana
 - name: community.routeros
+- name: ansible.posix
 

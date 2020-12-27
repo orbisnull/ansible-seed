@@ -2,9 +2,10 @@ ansible_host_key_checking: true
 #ansible_ssh_proxy_command: "-o ProxyCommand="ssh -W %h:%p Jumphost""
 ansible_ssh_proxy_command: ""
 ansible_ssh_extra_args_base: "-C {{ansible_ssh_proxy_command}} -o ForwardAgent=yes -o GSSAPIAuthentication=no -o HostbasedAuthentication=no  -o PreferredAuthentications=publickey"
-ansible_ssh_extra_args: "{{ ansible_ssh_extra_args_base }} -o StrictHostKeyChecking=yes -o ControlMaster=auto -o ControlPersist=180s -o ControlPath=~/.ansible/cp/ssh-%h-%p-%r"
+ansible_ssh_extra_args: "{{ ansible_ssh_extra_args_base }} -o StrictHostKeyChecking=yes -o ControlMaster=auto -o ControlPersist=180s -o ControlPath=./.tmp/cp"
 ansible_sftp_extra_args: "{{ansible_ssh_extra_args}}"
 ansible_scp_extra_args: "{{ansible_ssh_extra_args}}"
 ansible_ssh_pipelining: True
 ansible_ssh_use_tty: False
 #ansible_user: user
+linux_default_user_password: "{{ansible_sudo_pass}}"
