@@ -1,3 +1,7 @@
 Linux:
   children:
     NfsServers:
+    Postgresql:
+      children:
+        PostgresqlClients:
+        PostgresqlServers:

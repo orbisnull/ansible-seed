@@ -1,5 +1,6 @@
 wheel
 ansible
+ansible-lint[community]
 cryptography
 PyMySQL
 psycopg2
