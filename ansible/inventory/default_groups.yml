@@ -5,3 +5,5 @@ Linux:
       children:
         PostgresqlClients:
         PostgresqlServers:
+    NginxServers:
+    PhpServers:
